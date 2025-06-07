@@ -1,0 +1,99 @@
+.Testimonials{
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+.next-btn, .back-btn{
+    width: 25px; /* extra calss*/
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212ea0;
+}
+.back-btn{
+    right: auto;
+    left: 0;
+}
+.slider{
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.slider ul li{
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+}
+.slide{
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    padding: 40px;
+    border-radius: 10%;
+    color: #676767;
+    line-height: 1.4;
+}
+.slide img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 4px solid #212ea0;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.user-info h3{
+    color: #212ea0;
+}
+
+/* Example CSS for styling the icons */
+.bx {
+    font-size: 24px; /* Adjust size */
+    color: #000; /* Change color */
+    cursor: pointer; /* Add pointer cursor */
+    margin: 0 10px; /* Add spacing */
+  }
+  
+  .bx:hover {
+    color: #007bff; /* Change color on hover */
+  }
+/* ----------- Media Query ---------- */
+
+@media (max-width: 800px){
+    .Testimonials{
+        padding: 0 40px;
+    }
+    .next-btn, .back-btn{
+        padding: 10px;
+        width: 35px;
+    }
+
+    .slide img{
+        width: 50px;
+        border: 2.4px solid #212ea0;
+    }
+}
+@media (max-width: 600px){
+    .user-info{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .user-info h3{
+        font-size: 16px;
+    }
+    .user-info p{
+        font-size: 12px;   
+    }
+
+}
